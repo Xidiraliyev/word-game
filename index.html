@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="video-background">
+      <video autoplay muted loop>
+        <source src="images/mortal.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container">
+      <h1>Word Game</h1>
+      <p class="enter">
+        Enter your name: <input type="text" id="name-input" />
+      </p>
+      <button id="start-button">Start</button>
+      <p id="random-word"></p>
+      <input type="text" id="user-input" />
+      <p id="score">Score: <span id="score-value">0</span></p>
+      <p id="timer">Time: <span id="time-left"></span></p>
+    </div>
+
+    <script src="js/words.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

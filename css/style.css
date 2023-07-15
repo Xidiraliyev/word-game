@@ -1,0 +1,75 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mortal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Mortal\ Kombat\ 2.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mortal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Mortal\ Kombat\ 2.woff") format("woff1"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: "Mortal", sans-serif;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 5px;
+  font-size: 25px;
+  font-family: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensures the video doesn't create scrollbars */
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Puts the video behind other content */
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the entire container */
+}
+h1 {
+  text-align: center;
+  color: azure;
+  font-size: 80px;
+}
+p {
+  text-align: center;
+  color: azure;
+  font-size: 40px;
+}
+button {
+  border-radius: 5px;
+  padding: 40px;
+  font-size: 30px;
+  margin-left: 40%;
+}
